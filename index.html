@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Ahmed — Software Developer</title>
+<meta name="description" content="Portfolio of Muhammad Ahmed, Software Developer specializing in web applications and AI-integrated tools.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-code">
+    <span>&lt;</span><span class="loader-blink">/</span><span>&gt;</span>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>M.Ahmed<span class="logo-bracket">/&gt;</span></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="glow glow-cyan"></div>
+    <div class="glow glow-purple"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-eyebrow reveal">console.log("Hello World");</p>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="highlight">Muhammad Ahmed</span>
+      </h1>
+      <h2 class="hero-role reveal">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        I build modern, responsive, and user-friendly web applications with
+        clean and efficient code, blending front-end craftsmanship with
+        AI-powered workflows.
+      </p>
+
+      <div class="hero-buttons reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a> 
+        <a href="https://linkedin.com/in/muhammad-ahmed-53aa46348" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a> 
+        <a href="mailto:ahmedaamir225@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-card-title">developer.js</span>
+        </div>
+        <pre class="code-card-body"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Muhammad Ahmed"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Software Engineer"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"JS"</span>, <span class="c-str">"React"</span>],
+  <span class="c-prop">learning</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about section" id="about">
+  <div class="container">
+    <p class="section-eyebrow reveal">01 — About</p>
+    <h2 class="section-title reveal">Get to know me</h2>
+
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <div class="about-image-frame">
+          <img src="images/ahmedpic.jpg" alt="Muhammad Ahmed profile photo" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Muhammad%20Ahmed&backgroundColor=0b0f1a&textColor=22d3ee'"> 
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="about-text">
+          I'm a third-year Software Engineering student passionate about building
+          web applications that are both functional and beautifully designed.
+          I enjoy turning ideas into clean, working code — and I'm especially
+          interested in where front-end development meets AI-powered automation.
+        </p>
+
+        <div class="about-info">
+          <div class="info-row">
+            <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+            <span class="info-value">BS Software Engineering, Iqra University</span> 
+          </div>
+          <div class="info-row">
+            <span class="info-label"><i class="fa-solid fa-code"></i> Interests</span>
+            <span class="info-value">Web Development, AI Automation, Data Science, Machine Learning</span> 
+          </div>
+          <div class="info-row">
+            <span class="info-label"><i class="fa-solid fa-bullseye"></i> Goal</span>
+            <span class="info-value">Building impactful, AI-integrated products</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label"><i class="fa-solid fa-bolt"></i> Strengths</span>
+            <span class="info-value">Problem-solving, fast learner, clean code</span> 
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" data-count="8">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="12">0</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Years of Learning</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <p class="section-eyebrow reveal">02 — Skills</p>
+    <h2 class="section-title reveal">Tools I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>HTML</span><div class="bar"><div class="fill" style="--w:90%"></div></div></div>
+          <div class="skill-item"><span>CSS</span><div class="bar"><div class="fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span>JavaScript</span><div class="bar"><div class="fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span>React.js</span><div class="bar"><div class="fill" style="--w:10%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="fa-solid fa-database"></i> Database</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>SQL server</span><div class="bar"><div class="fill" style="--w:65%"></div></div></div>
+          <div class="skill-item"><span>MySQL</span><div class="bar"><div class="fill" style="--w:60%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="fa-solid fa-wrench"></i> Tools</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>Git</span><div class="bar"><div class="fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span>GitHub</span><div class="bar"><div class="fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span>VS Code</span><div class="bar"><div class="fill" style="--w:90%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="fa-solid fa-brain"></i> Other Skills </h3>
+        <div class="skill-list">
+          <div class="skill-item"><span> AWS</span><div class="bar"><div class="fill" style="--w:60%"></div></div></div>
+          <div class="skill-item"><span>OpenClaw</span><div class="bar"><div class="fill" style="--w:50%"></div></div></div>
+          <div class="skill-item"><span>WordPress</span><div class="bar"><div class="fill" style="--w:70%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <p class="section-eyebrow reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="images/project1.jpg" alt="Construction Project Management System screenshot" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=construction&backgroundColor=0b0f1a'">
+        </div>
+        <div class="project-body">
+          <h3>Construction Project Management System</h3>
+          <p>A full system for managing construction projects — authentication, task tracking, attendance, and activity logging.</p>
+          <div class="tech-tags">
+            <span>SQL Server</span><span>C#</span><span>ASP.NET</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-btn"><i class="fa-brands fa-github"></i> GitHub</a> 
+            <a href="#" class="proj-btn proj-btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> 
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="images/project2.jpg" alt="Freelancing Marketplace screenshot" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=marketplace&backgroundColor=0b0f1a'">
+        </div>
+        <div class="project-body">
+          <h3>Online Skill Development & Freelancing Marketplace</h3>
+          <p>A platform combining courses, certifications, freelancer profiles, project bidding, contracts and payments in one place.</p>
+          <div class="tech-tags">
+            <span>React</span><span>Node.js</span><span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-btn proj-btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="images/project3.jpg" alt="Personal Developer Portfolio screenshot" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=portfolio&backgroundColor=0b0f1a'">
+        </div>
+        <div class="project-body">
+          <h3>Personal Developer Portfolio</h3>
+          <p>This very site — a responsive, modern portfolio built with vanilla HTML, CSS and JavaScript interactions.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-btn proj-btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> 
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <p class="section-eyebrow reveal">04 — Journey</p>
+    <h2 class="section-title reveal">Experience & Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 — Present</span>
+          <h3>BS Software Engineering</h3>
+          <p class="timeline-org">Iqra University</p>
+          <p>Coursework in web development, databases, networking, and artificial intelligence. Built several academic projects including an AI disease-prediction system.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025</span>
+          <h3>Google AI Hackathon — Participant</h3>
+          <p class="timeline-org">SAHULAT AI Project</p>
+          <p>Collaborated on an AI-powered solution built during a competitive hackathon environment.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025 — Present</span>
+          <h3>Prompt Engineering — Freelance / Project Work</h3>
+          <p class="timeline-org">DecodeLabs</p>
+          <p>Designing AI prompts to extract structured JSON data from customer support emails.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Ongoing</span>
+          <h3>Self-Taught Web Development</h3>
+          <p class="timeline-org">Independent Study</p>
+          <p>Continuously building projects with HTML, CSS, JavaScript, and exploring the MERN stack.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services section" id="services">
+  <div class="container">
+    <p class="section-eyebrow reveal">05 — Services</p>
+    <h2 class="section-title reveal">What I can do</h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Web Development</h3>
+        <p>Building complete, functional websites from concept to deployment.</p>
+      </div>
+      <div class="service-card reveal">
+        <i class="fa-solid fa-swatchbook"></i>
+        <h3>Frontend Development</h3>
+        <p>Crafting clean, responsive user interfaces with modern JavaScript frameworks.</p>
+      </div>
+      <div class="service-card reveal">
+        <i class="fa-solid fa-server"></i>
+        <h3>Backend Development</h3>
+        <p>Building reliable server-side logic and application architecture.</p>
+      </div>
+      <div class="service-card reveal">
+        <i class="fa-solid fa-database"></i>
+        <h3>Database Development</h3>
+        <p>Designing efficient, well-structured relational databases.</p>
+      </div>
+      <div class="service-card reveal">
+        <i class="fa-solid fa-plug"></i>
+        <h3>Machine Learning</h3>
+        <p>Building intelligent systems that can learn and improve from data.</p>
+      </div>
+      <div class="service-card reveal">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>N8N workflows</h3>
+        <p>Designing and implementing automated workflows using N8N.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="certifications section" id="certifications">
+  <div class="container">
+    <p class="section-eyebrow reveal">06 — Certifications</p>
+    <h2 class="section-title reveal">Credentials</h2>
+
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>AI Fluency Certificate</h3> <!-- EDIT -->
+        <p class="cert-org">Course Provider Name</p>
+        <p class="cert-date">2026</p>
+        <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Google AI Hackathon Participation</h3> <!-- EDIT -->
+        <p class="cert-org">Google</p>
+        <p class="cert-date">2025</p>
+        <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Web Development Fundamentals</h3> <!-- EDIT -->
+        <p class="cert-org">Course Provider Name</p>
+        <p class="cert-date">2024</p>
+        <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <p class="section-eyebrow reveal">07 — Contact</p>
+    <h2 class="section-title reveal">Let's build something</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>Have a project in mind, an internship opportunity, or just want to say hi? My inbox is open.</p>
+
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div><span>Email</span><a href="mailto:ahmedaamir225@gmail.com">ahmedaamir225@gmail.com</a></div> <!-- EDIT -->
+        </div>
+        <div class="contact-detail">
+          <i class="fa-brands fa-linkedin"></i>
+          <div><span>LinkedIn</span><a href="https://linkedin.com/in/muhammad-ahmed-53aa46348" target="_blank" rel="noopener">linkedin.com/in/muhammad-ahmed-53aa46348</a></div> <!-- EDIT -->
+        </div>
+        <div class="contact-detail">
+          <i class="fa-brands fa-github"></i>
+          <div><span>GitHub</span><a href="https://github.com/m-ahmed001" target="_blank" rel="noopener">github.com/m-ahmed001</a></div> <!-- EDIT -->
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><span>Location</span><a href="#">Karachi, Pakistan</a></div> <!-- EDIT -->
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder=" " required>
+          <label for="name">Your Name</label>
+          <span class="error-msg" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <label for="email">Your Email</label>
+          <span class="error-msg" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder=" " required>
+          <label for="subject">Subject</label>
+          <span class="error-msg" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Message</label>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+        <!-- To connect a real backend: replace the JS submit handler in script.js
+             with a fetch() call to your email service (e.g. Formspree, EmailJS, or your own API). -->
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-success" id="formSuccess">Message sent! (Demo only — connect a backend to send for real.)</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>M.Ahmed<span class="logo-bracket">/&gt;</span></a>
+      <p>Building clean, modern web experiences.</p>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="https://github.com/m-ahmed001" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/muhammad-ahmed-53aa46348" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:ahmedaamir225@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Muhammad Ahmed. All Rights Reserved.</p>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
